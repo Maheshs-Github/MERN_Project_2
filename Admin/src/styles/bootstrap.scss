@@ -1,0 +1,9 @@
+// src/styles/custom-bootstrap.scss
+
+// Required Bootstrap imports
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/mixins";
+
+// Only import the button styles
+@import "bootstrap/scss/buttons";

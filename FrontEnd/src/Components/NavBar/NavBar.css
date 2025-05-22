@@ -1,0 +1,73 @@
+.Nav
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: cyan; */
+  margin-top: 8px;
+}
+.Nav .L1
+{
+  text-decoration:none;
+  color: black;
+}
+.Logo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Logo img
+{
+  
+  margin-right: 10px;
+}
+.Logo h2
+{
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Options 
+{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 43%;
+  font-size: 23px;
+}
+.Options li
+{
+  font-size: 20px;
+  font-weight: 600;
+  font-family: monospace;
+}
+.Options li:hover
+{
+  border-bottom: 3px solid rgb(247, 118, 223);
+}
+.Options .HrStyle
+{
+  color: blue;
+}
+.Login
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+      width: 13%;
+    gap: 29px;
+  font-size: 28px;
+}
+.Login button
+{
+  font-size: 17px;
+}
+.Login .Font
+{
+  font-size: 10px;
+}
+/* .Login .B1
+{
+  height: 10px;
+  width: 10px;
+} */

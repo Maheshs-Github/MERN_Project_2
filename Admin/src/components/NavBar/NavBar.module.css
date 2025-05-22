@@ -1,0 +1,8 @@
+.Base
+{
+  display: flex;
+    justify-content: space-between;
+    padding: 13px 20px;
+    background-color: aliceblue;
+    box-shadow: 0px -1.5px 5px;
+}

@@ -1,0 +1,56 @@
+.Hero
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 55px;
+  /* background:linear-gradient(180deg,) */
+  background: linear-gradient(180deg, #e890fc, #eddaed);
+
+  /* height: 267vh; */
+}
+.Img-Div 
+{
+  display: flex;
+  justify-content: end;
+  width: 50%;
+    height: 58%;
+}
+.Img-Div img
+{
+  display: flex;
+  justify-content: end;
+  width: 57%;
+  margin-top: -66px;
+}
+.Text
+{
+  width: 50%;
+  font-weight: 700;
+  margin-left: 20px;
+}
+.B_Text 
+{
+  font-size: 48px;
+  margin-bottom: 25px;
+}
+.B_Text p
+{
+  margin-bottom: 0px;
+}
+.B_Text .ha1
+{
+  display: inline;
+  margin-right: 10px;
+}
+.B_Text img
+{
+  height: 87px;
+}
+button .m1
+{
+  margin-top: 22px !important;
+  width: 203px;
+  height: 43px;
+}

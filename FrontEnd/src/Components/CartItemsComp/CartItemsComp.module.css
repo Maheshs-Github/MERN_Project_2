@@ -1,0 +1,109 @@
+.Headers , .ContentBase
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  gap: 0rem;
+  padding: 7px 0;
+    /* border-bottom: 1px solid #474545; */
+  margin: 20px 0;
+}
+.Headers span
+{
+  font-weight: 700;
+    font-family: cursive;
+}
+.CartBase
+{
+  padding: 95px;
+
+}
+.ContentBase img {
+  width: 50px;
+   height: 61px;
+    object-fit: contain;
+}
+.ContentBase .ContentName
+{
+  margin-left: 8px;
+
+}
+.ContentBase .ContentCross
+{
+  margin-left: 25px;
+}
+.ContentBase .ContentCross:hover
+{
+  transform: scale(1.1);
+  cursor: pointer;
+  color: red;
+}
+.CartBase hr{
+  height: 2px;
+  background-color: black;
+}
+.Quantity
+{
+  width: 30%;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px;
+}
+.CartTotal
+{
+  margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 200px
+}
+.CartTotal .CartSum
+{
+      width: 57%;
+
+}
+.CartSum h3
+{
+  font-weight: 600;
+    font-family: cursive;
+    margin-bottom: 35px;
+}
+.CartSum .F1
+{
+  display: flex;
+    justify-content: space-between;
+}
+.CartPromo
+{
+      margin-top: 40px;
+    display: inline-block;
+}
+.CartPromo span
+{
+  font-weight: 600;
+    color: darkolivegreen;
+    font-size: 13px;
+}
+.EnterCoupun
+{
+      margin-top: 21px;
+    display: inline-block;
+    width: 100%;
+}
+.EnterCoupunInput
+{
+  /* border: 2px solid black; */
+      border: 2px solid #ed0b0b;
+}
+.EnterCoupun button
+{
+  padding: 0px 11px;
+    border: 2px solid red;
+    color: indigo; 
+}
+.EnterCoupun button:hover
+{
+  color: white;
+    border: 2px solid white;
+  background-color: green;
+}

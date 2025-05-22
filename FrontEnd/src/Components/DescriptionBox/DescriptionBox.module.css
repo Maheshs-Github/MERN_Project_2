@@ -1,0 +1,32 @@
+.DescBase
+{
+  padding: 81px 0px;
+}
+
+/* .Title span
+{
+  border: 1px solid black;
+  padding: 10px;
+}
+.Title span:hover
+{
+  border: 2px solid rgb(54, 86, 230);
+} */
+
+.D1, .R1 {
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.D1:hover,
+.R1:hover {
+  border: 2px solid rgb(54, 86, 230);
+}
+
+.Desc 
+{
+  border: 1px solid black;
+  padding: 34px;
+  margin-top: 9px;
+}

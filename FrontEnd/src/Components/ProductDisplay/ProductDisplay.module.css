@@ -1,0 +1,72 @@
+.Base
+{
+  display: flex;
+  padding: 12px 0px;
+  align-items: flex-start;
+}
+
+.Imgs-Grp 
+{
+  width: min-content;
+}
+.Imgs-Grp img
+{
+  width: 128px;
+  /* height: 15%; */
+  height: auto;
+    max-height: 97px;
+  margin: 0px 10px 10px 0px;
+}
+.Big-Img 
+{
+  margin-right: 40px;
+}
+
+.Product-Info p
+{
+  font-size: 20px;
+}
+.Product-Info .Price
+{
+  margin: 20px 0px;
+  font-size: 23px;
+}
+.Product-Info .Price .OPrice
+{
+  text-decoration: line-through;
+    margin-right: 10px;
+}
+.Product-Info .Price .NPrice
+{
+  color: #ec4545;
+    font-weight: 700;
+}
+.Img-Desc
+{
+  font-weight: lighter;
+  font-size: 15px;
+}
+.Size h3
+{
+  font-family: math;
+}
+.Btns
+{
+  width: 41%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Cart-Button
+{
+  margin: 17px 0px;
+}
+.B1:hover
+{
+  transform: scale(1.1);
+}
+.B2
+{
+  border-radius: 0px;
+    width: 30%;
+    height: 22%;
+}

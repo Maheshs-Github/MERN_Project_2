@@ -1,0 +1,16 @@
+.Popular-Items
+{
+  display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+
+}
+.Popular h1{
+  text-align: center;
+  margin: 22px 0px;
+  font-family: cursive;
+    font-weight: 600;
+
+}

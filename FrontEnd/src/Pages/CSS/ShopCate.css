@@ -1,0 +1,43 @@
+.Shop-Cate
+{
+  margin: 50px;
+}
+.Shop-Ban img
+{
+  width: 100%;
+}
+.Shop-Sort p
+{
+  display: inline;
+  margin: 6px;
+}
+.Shop-Sort .B1
+{
+  width: max-content;
+}
+.Item-Text
+{
+  display: flex;
+      justify-content: space-between;
+      margin: 28px 0px;
+}
+
+.Shop-Items
+{
+  display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 13px;
+}
+
+
+.Explore-More
+{
+  text-align: center ;
+  margin: 36px;
+  margin-bottom: 100px;
+}
+.Explore-More .B2
+{
+  width: 19%;
+}

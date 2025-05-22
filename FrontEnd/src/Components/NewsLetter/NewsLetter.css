@@ -1,0 +1,26 @@
+.News
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan;
+  width: 75%;
+  height: 50%;
+  /* gap: 16%; */
+  padding: 50px;
+  margin: 85px;
+  margin-left: 138px;
+  background: linear-gradient(180deg, #e890fc, #eddaed);
+}
+.B_Text
+{
+  font-weight: 600;
+}
+.Search input 
+{
+  border-radius: 5px;
+    margin-right: 3px;
+    height: 36px;
+    width: 253px;
+}

@@ -1,0 +1,23 @@
+.Offers
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cyan;
+  width: 75%;
+  height: 50%;
+  gap: 16%;
+  padding: 22px;
+  margin: 85px;
+  margin-left: 138px;
+  background: linear-gradient(180deg, #e890fc, #eddaed);
+
+}
+.Offers img
+{
+  width: 25%;
+}
+.B_Text
+{
+  font-weight: 600;
+}

@@ -1,0 +1,93 @@
+  // const [ProductDetails, setProductDetails] = useState({
+  //   name: "",
+  //   category: "",
+  //   image: "",
+  //   old_price: "",
+  //   new_price: "",
+  // });
+
+
+// const DetailsHandler = (Event) => {
+  //   Event.preventDefault();
+
+  //   Data = {
+  //     name: name.current.value,
+  //     category: category.current.value,
+  //     image: image.current.value,
+  //     old_price: old_price.current.value,
+  //     new_price: new_price.current.value,
+  //   };
+  // const N1 = name.current.value;
+  // const C1 = category.current.value;
+  // const I1 = image.current.value;
+  // const OP1 = old_price.current.value;
+  // const NP1 = new_price.current.value;
+
+  // console.log(`   ${N1} ${C1} ${I1} ${OP1} ${NP1}`);
+  // setProductDetails({
+  //   // name: name.current.value,
+  //   // category: category.current.value,
+  //   // image: image.current.value,
+  //   // old_price: old_price.current.value,
+  //   // new_price: new_price.current.value,
+  //   name: N1,
+  //   category: C1,
+  //   image: I1,
+  //   old_price: OP1,
+  //   new_price: NP1,
+  // });
+  //   console.log("Product Details:(Deails Hndleer) ", Data);
+  // };
+  // console.log("Product Details:(Deails Hndleer) ", ProductDetails);
+
+
+  // if (uploadData.success) {
+    //   // 2. Set the image URL in ProductDetails
+    //   const updatedProduct = { ...ProductDetails, image: uploadData.image_url };
+    //   console.log("Product ", updatedProduct);
+    // }
+
+    // let formData = new FormData();
+    // formData.append("product", image);
+
+    // await fetch("http://localhost:4000", {
+    //   method: "POST",
+    //   headers: {
+    //     Accept: "application/json",
+    //   },
+    //   body: formData,
+    // })
+    //   .then((res) => {
+    //     res.json();
+    //   })
+    //   .then((data) => {
+    //     ResponseData = data;
+    //   });
+
+    // if (ResponseData.success) {
+    //   Product.image = ResponseData.image_url;
+    //   console.log(Product);
+    // }
+  };
+
+  // const AddProduct = async () => {
+  //   // 1. Upload image and get the image_url
+  //   const formData = new FormData();
+  //   formData.append("product", image);
+
+  //   const uploadRes = await fetch("http://localhost:4000/upload", {
+  //     method: "POST",
+  //     headers: {
+  //       Accept: "application/json",
+  //     },
+  //     body: formData,
+  //   });
+
+  //   const uploadData = await uploadRes.json();
+
+  //   if (uploadData.success) {
+  //     // 2. Set the image URL in ProductDetails
+  //     const updatedProduct = { ...ProductDetails, image: uploadData.image_url };
+  //     console.log("Product ", updatedProduct);
+  //   }
+  // };
