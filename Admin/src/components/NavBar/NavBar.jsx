@@ -10,7 +10,7 @@ const NavBar = () => {
       {/* <img src={Logo} alt="" /> */}
 
       <img src="/Admin_Assets/nav-logo.svg" alt="Nav-Logo" />
-      <img src="/Admin_Assets/nav-profile.svg" alt="Nav-Profile" />
+      <img src="/Admin_Assets/AdminLogo.png" alt="Nav-Profile" />
     </div>
   );
 };
