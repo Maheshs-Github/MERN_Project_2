@@ -42,9 +42,12 @@ const Stroage = multer.diskStorage({
 const upload = multer({ storage: Stroage });
 
 app.post("/upload", upload.single("product"), (req, res) => {
+  const protocol = req.protocol;
+  const host = req.get("host"); // e.g. example.onrender.com
+  const imageUrl = `${protocol}://${host}/images/${req.file.filename}`;
   res.json({
     success: 1,
-    image_url: `http://localhost:${Port}/images/${req.file.filename}`,
+    image_url: imageUrl,
   });
 });
 
