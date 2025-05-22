@@ -80,7 +80,7 @@ const ListProducts = () => {
                     <b>${Product.old_price}</b>
                   </span>
                   <span>
-                    <b>${Product.category}</b>
+                    <b>{Product.category}</b>
                   </span>
 
                   <span
