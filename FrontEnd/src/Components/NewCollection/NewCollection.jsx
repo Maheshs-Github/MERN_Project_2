@@ -9,7 +9,7 @@ const NewCollection = () => {
   useEffect(() => {
     const getCollectionFun = async () => {
       const getCollection = await fetch(
-        "http://localhost:4000/getNewCollection",
+        "https://mern-project-2-backend-mcjh.onrender.com/getNewCollection",
         {
           method: "GET",
           headers: {

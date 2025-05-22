@@ -8,12 +8,15 @@ const Popular = () => {
   const [data_product, setdata_product] = useState([]);
   useEffect(() => {
     const getPopularFun = async () => {
-      const getCollection = await fetch("http://localhost:4000/getPopular", {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
-      });
+      const getCollection = await fetch(
+        "https://mern-project-2-backend-mcjh.onrender.com/getPopular",
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
       const Data = await getCollection.json();
       setdata_product(Data);
     };

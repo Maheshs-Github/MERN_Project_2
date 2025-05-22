@@ -5,12 +5,15 @@ import { ImCross } from "react-icons/im";
 const ListProducts = () => {
   const [Data, setData] = useState([]);
   const getData = async () => {
-    const res = await fetch("http://localhost:4000/getAllProducts", {
-      method: "GET",
-      headers: {
-        Accept: "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://mern-project-2-backend-mcjh.onrender.com/getAllProducts",
+      {
+        method: "GET",
+        headers: {
+          Accept: "application/json",
+        },
+      }
+    );
     const ResData = await res.json();
     // console.log("Data: ", ResData);
     setData(ResData);
@@ -26,13 +29,16 @@ const ListProducts = () => {
 
   const deleteProduct = async (ID) => {
     try {
-      const DelRes = await fetch("http://localhost:4000/removeProduct", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ id: ID }),
-      });
+      const DelRes = await fetch(
+        "https://mern-project-2-backend-mcjh.onrender.com/removeProduct",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ id: ID }),
+        }
+      );
       const Ans = await DelRes.json();
       if (Ans.success) {
         console.log("deleted successfully ", Ans.id);

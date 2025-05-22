@@ -30,13 +30,16 @@ const AddProducts = () => {
     formData.append("product", Image);
 
     try {
-      const uploadRes = await fetch("http://localhost:4000/upload", {
-        method: "POST",
-        headers: {
-          Accept: "application/json",
-        },
-        body: formData,
-      });
+      const uploadRes = await fetch(
+        "https://mern-project-2-backend-mcjh.onrender.com/upload",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: formData,
+        }
+      );
 
       const uploadData = await uploadRes.json();
       // console.log("Data 2: ", uploadData);
@@ -46,13 +49,16 @@ const AddProducts = () => {
         // console.log("Image Upload is Successful");
 
         // 3. Send to database
-        const res = await fetch("http://localhost:4000/addproduct", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(Product),
-        });
+        const res = await fetch(
+          "https://mern-project-2-backend-mcjh.onrender.com/addproduct",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(Product),
+          }
+        );
 
         const dbData = await res.json();
         // console.log("Product Saved:", dbData);

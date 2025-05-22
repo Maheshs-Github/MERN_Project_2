@@ -22,7 +22,7 @@ const SignUp = async () => {
     console.log("Sign Up Data: ", SignUpData);
 
     try {
-      const AddSData = await fetch("http://localhost:4000/signup", {
+      const AddSData = await fetch("https://mern-project-2-backend-mcjh.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -51,7 +51,7 @@ const SignUp = async () => {
 --->most of that part is easy let's just go for the try block(we have data alredy), just try to send the data to the backend
 
     try {
-      const AddSData = await fetch("http://localhost:4000/signup", {
+      const AddSData = await fetch("https://mern-project-2-backend-mcjh.onrender.com/signup", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

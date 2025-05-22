@@ -3,7 +3,7 @@ import ShopContext from "./ShopContext";
 // import all_products from "../Assets/all_product.js";
 
 // const getDataFun = async () => {
-//   const GetProducts = await fetch("http://localhost:4000/getAllProducts", {
+//   const GetProducts = await fetch("https://mern-project-2-backend-mcjh.onrender.com/getAllProducts", {
 //     method: "GET",
 //     headers: {
 //       Accept: "application/json",
@@ -25,12 +25,15 @@ const getDefaultCart = () => {
 const ShopContextProvider = (props) => {
   useEffect(() => {
     const FetchP = async () => {
-      const GetProducts = await fetch("http://localhost:4000/getAllProducts", {
-        method: "GET",
-        headers: {
-          Accept: "application/json",
-        },
-      });
+      const GetProducts = await fetch(
+        "https://mern-project-2-backend-mcjh.onrender.com/getAllProducts",
+        {
+          method: "GET",
+          headers: {
+            Accept: "application/json",
+          },
+        }
+      );
 
       const Data = await GetProducts.json();
       console.log("Data of Products is : ", Data);
@@ -41,15 +44,18 @@ const ShopContextProvider = (props) => {
     const GetcartF = async () => {
       if (localStorage.getItem("auth-token")) {
         try {
-          const cartData = await fetch("http://localhost:4000/getCart", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-              Accept: "application/json",
-              "auth-token": `${localStorage.getItem("auth-token")}`,
-            },
-            body: "",
-          });
+          const cartData = await fetch(
+            "https://mern-project-2-backend-mcjh.onrender.com/getCart",
+            {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+                Accept: "application/json",
+                "auth-token": `${localStorage.getItem("auth-token")}`,
+              },
+              body: "",
+            }
+          );
           const Data = await cartData.json();
           // console.log("Data: ", Data);
           setCartItems(Data);
@@ -69,15 +75,18 @@ const ShopContextProvider = (props) => {
     // console.log(CartItems);
     if (localStorage.getItem("auth-token")) {
       try {
-        const cartData = await fetch("http://localhost:4000/addToCart", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-            "auth-token": `${localStorage.getItem("auth-token")}`,
-          },
-          body: JSON.stringify({ itemId: itemId }),
-        });
+        const cartData = await fetch(
+          "https://mern-project-2-backend-mcjh.onrender.com/addToCart",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "auth-token": `${localStorage.getItem("auth-token")}`,
+            },
+            body: JSON.stringify({ itemId: itemId }),
+          }
+        );
         const Data = await cartData.json();
         console.log("Data: ", Data);
       } catch (err) {
@@ -95,15 +104,18 @@ const ShopContextProvider = (props) => {
     });
     if (localStorage.getItem("auth-token")) {
       try {
-        const cartData = await fetch("http://localhost:4000/removeFromCart", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-            "auth-token": `${localStorage.getItem("auth-token")}`,
-          },
-          body: JSON.stringify({ itemId: itemId }),
-        });
+        const cartData = await fetch(
+          "https://mern-project-2-backend-mcjh.onrender.com/removeFromCart",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+              "auth-token": `${localStorage.getItem("auth-token")}`,
+            },
+            body: JSON.stringify({ itemId: itemId }),
+          }
+        );
         const Data = await cartData.json();
         console.log("Data: ", Data);
       } catch (err) {

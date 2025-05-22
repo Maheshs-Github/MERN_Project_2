@@ -14,14 +14,17 @@ const LoginSignUp = () => {
     };
     console.log("Login Data: ", LoginData);
     try {
-      const AddLData = await fetch("http://localhost:4000/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(LoginData),
-      });
+      const AddLData = await fetch(
+        "https://mern-project-2-backend-mcjh.onrender.com/login",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(LoginData),
+        }
+      );
       const resLData = await AddLData.json();
       if (resLData.success) {
         console.log("Res: ", resLData.message);
@@ -51,14 +54,17 @@ const LoginSignUp = () => {
     console.log("Sign Up Data: ", SignUpData);
 
     try {
-      const AddSData = await fetch("http://localhost:4000/signup", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify(SignUpData),
-      });
+      const AddSData = await fetch(
+        "https://mern-project-2-backend-mcjh.onrender.com/signup",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            Accept: "application/json",
+          },
+          body: JSON.stringify(SignUpData),
+        }
+      );
       const resSData = await AddSData.json();
       if (resSData.success) {
         console.log("Mesage: ", resSData.message);

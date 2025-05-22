@@ -1,12 +1,13 @@
 const express = require("express");
 const app = express();
-const Port = 4000;
+const Port = process.env.PORT || 4000;
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const path = require("path");
 const multer = require("multer");
 const cors = require("cors");
 const { type } = require("os");
+require("dotenv").config();
 
 app.use(express.json());
 app.use(cors());
@@ -14,9 +15,11 @@ app.use(cors());
 //
 //
 // Mongoose DB connection
-mongoose.connect(
-  "mongodb+srv://maheshmane9075:Mahesh%40Studies25@cluster0.vthxc5z.mongodb.net/MERN_Project2?retryWrites=true&w=majority&appName=Cluster0/"
-);
+
+// mongoose.connect(
+//   "mongodb+srv://maheshmane9075:Mahesh%40Studies25@cluster0.vthxc5z.mongodb.net/MERN_Project2?retryWrites=true&w=majority&appName=Cluster0/"
+// );
+mongoose.connect(process.env.MONGO_URI);
 
 //
 //
@@ -185,7 +188,9 @@ app.post("/signup", ValidateSignUp, async (req, res) => {
       },
     };
 
-    const token = jwt.sign(Data, "secret_ecom");
+    // const token = jwt.sign(Data, "secret_ecom");
+    const token = jwt.sign(Data, process.env.JWT_SECRET || "secret_ecom");
+
     res.json({
       success: true,
       token,
