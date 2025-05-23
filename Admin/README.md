@@ -1,12 +1,17 @@
-# React + Vite
+# SHOPPER Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the admin dashboard for SHOPPER, used to manage product inventory.
 
-Currently, two official plugins are available:
+## 🔧 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Form-based product creation
+- Image upload integration with backend
+- Real-time feedback and form validation
+- Basic UI elements with form controls
 
-## Expanding the ESLint configuration
+## 📚 What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- How to create admin dashboards for inventory management
+- Connecting frontend form with backend using `fetch`
+- Uploading and previewing images
+- Maintaining separation between user-side and admin-side logic
