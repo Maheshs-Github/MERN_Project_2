@@ -1,12 +1,22 @@
-# React + Vite
+# SHOPPER Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This folder contains the frontend of the SHOPPER project, built using **React** with **Vite**.
 
-Currently, two official plugins are available:
+## 🔧 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Component-based architecture for modularity and reusability
+- Routing handled using `react-router-dom`
+- Global state management using React Context API
+- Form handling, event listeners, and dynamic rendering
+- Integrated `fetch` to interact with backend APIs
+- UI design using basic CSS and Bootstrap
 
-## Expanding the ESLint configuration
+## 📚 What I Learned
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- How to set up a React project using Vite
+- Managing state with `useState`, `useEffect`, `useRef`, and Context API
+- Routing with React Router
+- Communicating with backend using HTTP requests
+- Component styling and structuring a responsive layout
+- How to handle authentication with tokens and store them in `localStorage`
+
