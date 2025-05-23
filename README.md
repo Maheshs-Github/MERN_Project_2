@@ -1,6 +1,7 @@
 🛍️ SHOPPER - E-commerce Web Application
 
 Description:
+
  SHOPPER is a project for understanding and demonstrating my foundational knowledge of MERN stack technologies. It involves:
  Designing user interfaces using basic CSS and Bootstrap.
  Dividing the application into reusable, component-based architecture.
@@ -14,11 +15,15 @@ Live Demo:
  Admin Panel -> https://mern-project-2-admin.onrender.com/
 
 Tech Stack:
+
  Frontend: React, Vite , bootstrap 
+ 
  Backend: Node.js, Express, MongoDB
+ 
  Admin Panel: React
 
 What I Learned:
+
 Component-based architecture and reusability in React
 * React hooks like `useRef`, `useState`, and `useContext`
 * React Router for navigation
