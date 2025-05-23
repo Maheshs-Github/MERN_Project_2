@@ -40,3 +40,14 @@ Project Structure:
  BackEnd/: Contains the Express backend API.
 
  AdminPanel/: Contains the admin panel for managing the store.****
+
+
+ ## 🎓 For Learning
+
+If you're just getting started with full-stack development or MERN:
+
+- 📚 **Learn by Building** – Pick a project and start coding!
+- 🤖 **Ask ChatGPT** – It's a great tool to get help and improve understanding.
+- 📺 **YouTube** – Tons of free resources. I recommend checking out  
+  **Prashant Sir's YouTube Channel** for clear and beginner-friendly tutorials.
+- 💬 **Stay Curious** – Keep asking questions, and don't hesitate to experiment
